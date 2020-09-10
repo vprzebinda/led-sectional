@@ -253,6 +253,7 @@ void loop() {
 
 
 bool readNextFmt(SSLBuffer* client, char* f, String* result) {
+  *result = String();
   char* startover = f;
   bool copying = false;
   char c;
